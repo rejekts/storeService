@@ -17,7 +17,7 @@ app.get("/proxies/available", (req, res) => {
   console.log("route hit");
   db.retrieveAvailableProxies()
     .then(results => {
-      console.log(results, "im here");
+      // console.log(results, "im here");
       res.status(200).send(results);
     })
     .catch(err => {
